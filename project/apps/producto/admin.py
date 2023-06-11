@@ -26,8 +26,8 @@ class ProductoAdmin(admin.ModelAdmin):
     list_display = (
         "categoria",
         "nombre",
-        "unidad_de_medida",
-        "cantidad",
+       # "unidad_de_medida",
+       # "cantidad",
         "precio",
         "descripcion",
         "fecha_actualizacion",
