@@ -27,29 +27,29 @@ def register(request: HttpRequest) -> HttpResponse:
 def about(request: HttpRequest) -> HttpResponse:
     return render(request, "home/about.html")
 
-def salta(request: HttpRequest) -> HttpResponse:
-    return render(request, "home/salta.html")
+#def salta(request: HttpRequest) -> HttpResponse:
+ #   return render(request, "home/salta.html")
 
-def jujuy(request: HttpRequest) -> HttpResponse:
-    return render(request, "home/jujuy.html")
+#def jujuy(request: HttpRequest) -> HttpResponse:
+ #   return render(request, "home/jujuy.html")
 
-def mendoza(request: HttpRequest) -> HttpResponse:
-    return render(request, "home/mendoza.html")
+#def mendoza(request: HttpRequest) -> HttpResponse:
+ #   return render(request, "home/mendoza.html")
 
-def cataratas(request: HttpRequest) -> HttpResponse:
-    return render(request, "home/cataratas.html")
+#def cataratas(request: HttpRequest) -> HttpResponse:
+ #   return render(request, "home/cataratas.html")
 
-def perito(request: HttpRequest) -> HttpResponse:
-    return render(request, "home/perito.html")
+#def perito(request: HttpRequest) -> HttpResponse:
+ #   return render(request, "home/perito.html")
 
-def rioja(request: HttpRequest) -> HttpResponse:
-    return render(request, "home/rioja.html")
+#def rioja(request: HttpRequest) -> HttpResponse:
+ #   return render(request, "home/rioja.html")
 
-def bariloche(request: HttpRequest) -> HttpResponse:
-    return render(request, "home/bariloche.html")
+#def bariloche(request: HttpRequest) -> HttpResponse:
+ #   return render(request, "home/bariloche.html")
 
-def santarosa(request: HttpRequest) -> HttpResponse:
-    return render(request, "home/santarosa.html")
+#def santarosa(request: HttpRequest) -> HttpResponse:
+ #   return render(request, "home/santarosa.html")
 
 
 
