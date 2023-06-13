@@ -1,0 +1,22 @@
+{% extends 'producto/index.html' %}
+
+{% block title %}
+    Detalle de Todos los Productos
+{% endblock title %}
+
+{% block content_producto %}
+    {% for producto in productos %}
+        <h3>Producto: {{ producto.nombre }}</h3>
+        <ul>
+            <li>Categoría: {{ producto.categoria }}</li>
+            <li>Precio: {{ producto.precio }}</li>
+            <li>Descripción: {{ producto.descripcion }}</li>
+            <li>Fecha de actualización: {{ producto.fecha_actualizacion }}</li>
+        </ul>
+    {% empty %}
+        <p>No hay productos disponibles.</p>
+    {% endfor %}
+
+    {% url 'producto:producto_todoproducto_detail' as url %}
+    
+{% endblock content_producto %}

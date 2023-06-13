@@ -2,10 +2,12 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views.generic import DetailView, ListView
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
-
+from django.http import HttpRequest, HttpResponse
 from . import forms, models
-
 # **** Categoría de Productos
+from django.shortcuts import render
+from producto.models import Producto
+
 
 
 class ProductoCategoriaDetail(DetailView):
@@ -75,3 +77,8 @@ class ProductoUpdate(UpdateView):
     model = models.Producto
     success_url = reverse_lazy("producto:producto_list")
     form_class = forms.ProductoForm
+
+def TodoProductoDetail(request):
+    productos = Producto.objects.all()
+    context = {"productos": productos}
+    return render(request, "producto/todoproducto_detail.html", context)
