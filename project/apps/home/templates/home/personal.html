@@ -1,0 +1,9 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+    <p>Regina</p>
+
+    <a href="https://api.whatsapp.com/send?phone=TUNUMERODEWHATSAPP" target="_blank">
+        <img src="{% static 'home/avatar/wsp.png' %}" alt="Enviar mensaje de WhatsApp" style="width: 50px; height: 50px;">
+    </a>
+{% endblock %}

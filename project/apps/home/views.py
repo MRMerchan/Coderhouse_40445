@@ -51,5 +51,6 @@ def about(request: HttpRequest) -> HttpResponse:
 #def santarosa(request: HttpRequest) -> HttpResponse:
  #   return render(request, "home/santarosa.html")
 
-
+def personal(request: HttpRequest) -> HttpResponse:
+    return render(request, "home/personal.html")
 

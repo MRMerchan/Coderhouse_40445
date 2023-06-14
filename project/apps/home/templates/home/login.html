@@ -5,7 +5,11 @@
         {% csrf_token %}
         {{ form.as_p }}
         <div class="d-grid gap-3">
-            <button type="submit" class="btn btn-success">Iniciar sesión</button>
+            <button type="submit" class="btn btn-success btn-block">Iniciar sesión</button>
         </div>
     </form>
+    <div class="d-grid gap-3">
+        <a class="btn btn-danger btn-block" href="{% url 'home:logout' %}">Logout</a>
+    </div>
 {% endblock content %}
+
