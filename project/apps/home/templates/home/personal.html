@@ -1,6 +1,10 @@
 {% extends 'home/base.html' %}
 {% load static %}
 {% block content %}
+
+<li>
+    <img class="img-fluid" src="{% static 'media/regina1.jpg' %}" alt="regina" />
+    </li>
     <p>Hola soy Maria Regina Merchan,soy profe de educacion fisica y luego de varios años trabajando en escuelas, decidi comenzar a capacitarme en diferentes areas. 
         Luego de investigar mucho di con python y decidi comenzar, aca estamos, cursando o mejor dicho, entregando el proyecto final. 
         La pagina web sobre viajes surge a raiz de que me gusta mucho conocer lugares nuevos, sobre todo de nuestra Argentina querida, que tiene lugares maravillosos y para todos los gustos.
@@ -9,8 +13,9 @@
         Les dejo mi contacto. 
         Gracias Totales! 
     </p>
-
+   
+    <li>
     <a href="https://api.whatsapp.com/send?phone=TUNUMERODEWHATSAPP" target="_blank">
         <img src="{% static 'home/avatar/wsp.png' %}" alt="Enviar mensaje de WhatsApp" style="width: 50px; height: 50px;">
-    </a><p>numero de wsp sin configurar</p>
+    </a><p>numero de wsp sin configurar</p></li>
 {% endblock %}
