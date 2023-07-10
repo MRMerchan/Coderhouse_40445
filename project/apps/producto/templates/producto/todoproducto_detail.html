@@ -1,14 +1,20 @@
 {% extends 'producto/index.html' %}
+{% load static %}
 
 {% block title %}
-    Detalle de Todos los Productos
+    Detalle de Todos los Viajes
 {% endblock title %}
 
 {% block content_producto %}
     {% for producto in productos %}
         <h3>Producto: {{ producto.nombre }}</h3>
+        {% if producto.foto %}
+            <img src="{% static 'media/' %}" alt="Foto del producto">
+        {% else %}
+            <p>No hay foto disponible.</p>
+        {% endif %}
         <ul>
-            <li>Categoría: {{ producto.categoria }}</li>
+            <li>Ciudad: {{ producto.categoria }}</li>
             <li>Precio: {{ producto.precio }}</li>
             <li>Descripción: {{ producto.descripcion }}</li>
             <li>Fecha de actualización: {{ producto.fecha_actualizacion }}</li>

@@ -24,6 +24,7 @@ class Producto(models.Model):
     nombre = models.CharField(max_length=100)
     precio = models.DecimalField(max_digits=10, decimal_places=2)
     descripcion = models.CharField(max_length=250, blank=True, null=True, verbose_name="descripción")
+    foto = models.ImageField(upload_to='productos', blank=True, null=True, verbose_name="foto")
     fecha_actualizacion = models.DateTimeField(default=timezone.now, editable=False, verbose_name="fecha de actualización")
 
     class Meta:
